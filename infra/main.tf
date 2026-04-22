@@ -1,7 +1,7 @@
 # Bucket to store website
 resource "google_storage_bucket" "website" {
   provider = google
-  name     = "example-rishab-coffee7"
+  name     = "example-rashid-coffee7"
   location = "US"
 }
 
@@ -35,7 +35,7 @@ resource "google_compute_global_address" "website" {
 # Get the managed DNS zone
 data "google_dns_managed_zone" "gcp_coffeetime_dev" {
   provider = google
-  name     = "rishab-example"
+  name     = "rashid-example"
 }
 
 # Add the IP to the DNS
